@@ -1,0 +1,167 @@
+.footer-link {
+    color: var(--text-gray);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: white;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    opacity: 1;
+  }
+  
+  .subscribe-input-group {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding-right: 5px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .subscribe-input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .subscribe-input:focus {
+    color: white;
+    outline: none;
+  }
+  
+  .subscribe-button {
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 36px;
+    height: 36px;
+    transition: all 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+  }
+  
+  .payment-icons-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .payment-icons-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .payment-icon {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .footer-bottom {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+  }
+  
+  .certification-icon {
+    height: 50px;
+    margin-right: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+  }
+  
+  .certification-icon:hover {
+    opacity: 1;
+  }
+  
+  .certification-subscribe-section {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .subscribe-title {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 991px) {
+    .certification-subscribe-section .row {
+      text-align: center;
+    }
+    
+    .certification-subscribe-section .d-flex {
+      justify-content: center;
+    }
+    
+    .subscribe-form {
+      justify-content: center;
+    }
+    
+    .subscribe-title {
+      margin-bottom: 1rem !important;
+    }
+  
+    .payment-icons-container {
+      justify-content: center;
+      margin-top: 2rem;
+    }
+  
+    .payment-icons-wrapper {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .certification-icon {
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+    .subscribe-input-group {
+      max-width: none;
+    }
+  
+    .payment-icons-wrapper {
+      gap: 10px;
+    }
+  
+    .payment-icon {
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .payment-icons-wrapper {
+      gap: 8px;
+    }
+  
+    .payment-icon {
+      height: 20px;
+    }
+  }
+  
