@@ -1,0 +1,139 @@
+.landing-container {
+    background-color: white;
+    background-image: linear-gradient(rgb(235, 235, 224) 1px, transparent 1px),
+                      linear-gradient(90deg, rgb(235, 235, 224) 1px, transparent 1px);
+    background-size: 70px 70px;
+    height: 180px;
+    width: 100%;
+  }
+  
+  .button-group {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .active-button {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .inactive-button {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: transparent;
+    color: black;
+  }
+  
+  .ai-card {
+    position: relative;
+    border: 1px solid black;
+    height: 450px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    background-color: rgb(10, 5, 5);
+    color: white;
+    overflow: hidden;
+  }
+  
+  .glowing-dot {
+    position: absolute;
+    width: 1.5px;
+    height: 1.5px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  }
+  
+  .glowing-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .glow-right, .glow-left, .glow-down, .glow-up {
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 102, 51, 0.9);
+    box-shadow: 0 0 10px rgba(255, 102, 51, 0.9);
+  }
+  
+  .glow-right {
+    top: 10%;
+    left: -10%;
+    animation: glowRight 1s linear infinite;
+  }
+  
+  .glow-left {
+    top: 50%;
+    right: -10%;
+    animation: glowLeft 1s linear infinite;
+  }
+  
+  .glow-down {
+    top: -10%;
+    left: 25%;
+    width: 2px;
+    height: 60px;
+    animation: glowDown 1s linear infinite;
+  }
+  
+  .glow-up {
+    bottom: -10%;
+    left: 75%;
+    width: 2px;
+    height: 60px;
+    animation: glowUp 1s linear infinite;
+  }
+  
+  @keyframes glowRight {
+    0% { left: -10%; }
+    100% { left: 110%; }
+  }
+  
+  @keyframes glowLeft {
+    0% { right: -10%; }
+    100% { right: 110%; }
+  }
+  
+  @keyframes glowDown {
+    0% { top: -10%; }
+    100% { top: 110%; }
+  }
+  
+  @keyframes glowUp {
+    0% { bottom: -10%; }
+    100% { bottom: 110%; }
+  }
+  
+  .text-animation {
+    animation: fadeInUp 1.2s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

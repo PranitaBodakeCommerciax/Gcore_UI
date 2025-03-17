@@ -1,0 +1,85 @@
+.flexible-container {
+    padding: 0 1rem;
+  }
+  
+  .navbar-container {
+    margin-bottom: 2rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .badge-custom {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 15px;
+  }
+  
+  .heading {
+    margin-top: 1.5rem;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .card-container {
+    padding: 3rem 0;
+  }
+  
+  .card-custom {
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .card-title-custom {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-list {
+    font-size: 15px;
+    padding-left: 2px;
+    line-height: 1.8;
+    list-style: none;
+  }
+  
+  .card-list li {
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-list li span {
+    color: black;
+    font-size: 18px;
+    margin-right: 8px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 3px;
+    }
+  
+    .badge-custom {
+      font-size: 13px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 28px;
+    }
+  
+    .badge-custom {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  
